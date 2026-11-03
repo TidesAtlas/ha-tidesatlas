@@ -1,0 +1,29 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Choose a place",
+        "description": "Type the name of a port, beach or coastal town. Leave empty to list the places closest to your home.",
+        "data": { "search": "Place name" }
+      },
+      "pick": {
+        "title": "Choose a place",
+        "data": { "port_id": "Place" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot reach TidesAtlas. Try again later.",
+      "no_results": "No place found. Try another name."
+    },
+    "abort": { "already_configured": "This place is already set up." }
+  },
+  "entity": {
+    "sensor": {
+      "next_high_tide": { "name": "Next high tide" },
+      "next_low_tide": { "name": "Next low tide" },
+      "tide_height": { "name": "Tide height" },
+      "tide_trend": { "name": "Tide", "state": { "rising": "Rising", "falling": "Falling" } },
+      "tide_coefficient": { "name": "Tide coefficient" }
+    }
+  }
+}

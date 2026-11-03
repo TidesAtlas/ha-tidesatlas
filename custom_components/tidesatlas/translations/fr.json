@@ -1,0 +1,49 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Choisir un lieu",
+        "description": "Tapez le nom d'un port, d'une plage ou d'une ville du littoral. Laissez vide pour voir les lieux les plus proches de chez vous.",
+        "data": {
+          "search": "Nom du lieu"
+        }
+      },
+      "pick": {
+        "title": "Choisir un lieu",
+        "data": {
+          "port_id": "Lieu"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de joindre TidesAtlas. Réessayez plus tard.",
+      "no_results": "Aucun lieu trouvé. Essayez un autre nom."
+    },
+    "abort": {
+      "already_configured": "Ce lieu est déjà configuré."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_high_tide": {
+        "name": "Prochaine pleine mer"
+      },
+      "next_low_tide": {
+        "name": "Prochaine basse mer"
+      },
+      "tide_height": {
+        "name": "Hauteur d'eau"
+      },
+      "tide_trend": {
+        "name": "Marée",
+        "state": {
+          "rising": "Montante",
+          "falling": "Descendante"
+        }
+      },
+      "tide_coefficient": {
+        "name": "Coefficient de marée"
+      }
+    }
+  }
+}

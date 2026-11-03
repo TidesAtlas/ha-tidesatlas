@@ -1,0 +1,12 @@
+{
+  "domain": "tidesatlas",
+  "name": "TidesAtlas Tides",
+  "codeowners": ["@TidesAtlas"],
+  "config_flow": true,
+  "documentation": "https://github.com/TidesAtlas/ha-tidesatlas",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/TidesAtlas/ha-tidesatlas/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}
