@@ -54,7 +54,13 @@ automation:
 
 ## Data
 
-Tide predictions come from the free TidesAtlas widget feed (`https://tidesatlas.com/api/widget/v1/`): next 3 days, one place at a time. Only the place ID and your Home Assistant language are sent. For 14-day forecasts, weather, waves, sea temperature or any coordinates, see the [TidesAtlas API](https://tidesatlas.com/en/api/docs).
+Tide predictions come from the free TidesAtlas widget feed (`https://tidesatlas.com/api/widget/v1/`): next 3 days, one place at a time. No account, no API key, no tracking.
+
+What is sent to tidesatlas.com:
+
+- **During setup**: the place name you type. If you leave it empty, your Home Assistant home coordinates **rounded to 3 decimals** (about 100 m), to list the nearest places.
+- **Afterwards** (every 2 hours): only the ID of the chosen place.
+- Always: your Home Assistant language (for example `fr`), so place names come back in your language. For 14-day forecasts, weather, waves, sea temperature or any coordinates, see the [TidesAtlas API](https://tidesatlas.com/en/api/docs).
 
 Tide times are predictions. **Not for navigation.**
 
